@@ -1,0 +1,225 @@
+.batLogo {
+  height: 50px;
+  width: 50px;
+  background-image: url("/assets/images/Badge_2_ans_72px.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.batLogo:hover {
+  background-image: url("/assets/images/Iconsmind-Outline-Bat.ico");
+  height: 50px;
+  width: 50px;
+  transform: rotate(90deg);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  background-color: gold;
+  height: 80px;
+}
+
+.logoDev {
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  right: 95%;
+}
+
+.parcours {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  padding-left: 250px;
+}
+.parcours h1 {
+  font-size: 3rem;
+}
+.parcours p {
+  font-size: 2rem;
+}
+
+.laser {
+  width: 80vw;
+  border: gold 2px solid;
+  border-radius: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px black, inset 0 0 8px black, 0 0 16px gold, inset 0 0 16px gold, 0 0 32px gold, inset 0 0 32px gold;
+  animation: flashing 1s infinite alternate;
+}
+
+@keyframes flashing {
+  0%, 18%, 21%, 32%, 35%, 39%, 42%, 100% {
+    box-shadow: 10 10 8px black, inset 0 0 8px black, 0 0 32px gold, inset 0 0 32px gold, 0 0 64px gold, inset 0 0 64px gold;
+  }
+  20%, 34%, 41% {
+    box-shadow: none;
+  }
+}
+* {
+  /* HTML5 display-role reset for older browsers */
+}
+* html, * body, * div, * span, * applet, * object, * iframe,
+* h1, * h2, * h3, * h4, * h5, * h6, * p, * blockquote, * pre,
+* a, * abbr, * acronym, * address, * big, * cite, * code,
+* del, * dfn, * em, * img, * ins, * kbd, * q, * s, * samp,
+* small, * strike, * strong, * sub, * sup, * tt, * var,
+* b, * u, * i, * center,
+* dl, * dt, * dd, * ol, * ul, * li,
+* fieldset, * form, * label, * legend,
+* table, * caption, * tbody, * tfoot, * thead, * tr, * th, * td,
+* article, * aside, * canvas, * details, * embed,
+* figure, * figcaption, * footer, * header, * hgroup,
+* menu, * nav, * output, * ruby, * section, * summary,
+* time, * mark, * audio, * video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: white;
+}
+* article, * aside, * details, * figcaption, * figure,
+* footer, * header, * hgroup, * menu, * nav, * section {
+  display: block;
+}
+* body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+* ol, * ul {
+  list-style: none;
+}
+* blockquote, * q {
+  quotes: none;
+}
+* blockquote:before, * blockquote:after,
+* q:before, * q:after {
+  content: "";
+  content: none;
+}
+* table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "batman";
+  src: url("/assets/fonts/batmfa__.ttf");
+}
+@font-face {
+  font-family: "popins";
+  src: url("/assets/fonts/Poppins-SemiBold.ttf");
+}
+body {
+  background-color: black;
+  font-family: "popins";
+}
+
+h1, h2, h3 {
+  font-family: "batman";
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#profil {
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  width: 70vw;
+  padding: 200px 0 200px 0px;
+}
+#profil div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.profilAnim {
+  animation-name: profil;
+  animation-duration: 5s;
+}
+
+@keyframes profil {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 50%;
+  }
+}
+#xp {
+  width: 70vw;
+  padding: 200px 0 200px 0;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+}
+#xp div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#outils {
+  padding: 200px 0 200px 0px;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 100px;
+  width: 70vw;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  border: 2px solid #7D2323;
+  padding: 50px;
+  width: auto;
+  box-shadow: #7D2323 5px 5px 5px 5px;
+}
+.languages a:nth-child(2n+1):hover {
+  color: gold;
+  font-size: 2rem;
+}
+.languages a:hover {
+  color: #7D2323;
+  font-size: 2rem;
+}

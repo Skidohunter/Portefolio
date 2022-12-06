@@ -1,0 +1,40 @@
+#profil{
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    @include flex(center,flex-start,column);
+    gap: 50px;
+    width: 70vw;
+    padding: 200px 0 200px 0px;
+    
+    div{
+        @include flex;
+        gap: 20px;
+    
+    }
+}
+
+.profilAnim{
+    animation-name: profil;
+    animation-duration: 5s;
+}
+@keyframes profil {
+    from {left: -50%;}
+    to {left: 50%;}
+}
+
+#xp{
+    width: 70vw;
+    padding: 200px 0 200px 0;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    @include flex(flex-start,flex-start,column);
+    gap: 50px;
+    div{
+        @include flex;
+        gap: 20px;
+    
+    }
+
+}

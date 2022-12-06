@@ -1,0 +1,29 @@
+.batLogo {
+    height: 50px;
+    width: 50px;
+    background-image: url('/assets/images/Badge_2_ans_72px.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.batLogo:hover{
+    background-image: url('/assets/images/Iconsmind-Outline-Bat.ico');
+    height: 50px;
+    width: 50px;
+    transform: rotate(90deg);
+}
+
+ul{
+    @include flex;
+    gap:30px ;
+    background-color: gold;
+    height: 80px;
+}
+
+.logoDev{
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    right:95%;
+}

@@ -1,0 +1,27 @@
+*{
+    @include reset-css;
+  
+}
+@font-face {
+    font-family: 'batman';
+    src: url('/assets/fonts/batmfa__.ttf');
+}
+
+@font-face {
+    font-family: 'popins';
+    src: url('/assets/fonts/Poppins-SemiBold.ttf');
+}
+
+body{
+    background-color: black;
+    font-family: 'popins';
+  
+}
+
+h1,h2,h3{
+    font-family: 'batman';
+}
+h2{
+    font-size: 2rem;
+}
+
