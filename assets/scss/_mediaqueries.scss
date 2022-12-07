@@ -1,0 +1,105 @@
+
+@media screen and (max-width : 1000px){
+    .contactDiv div{
+        display: block
+    }
+
+}
+
+@media screen and (max-width : 800px){
+    .languages{
+        flex-direction: column;
+    }
+
+    .parcours{
+        padding-left: 10px;
+    }
+
+    .owl-stage-outer{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width : 700px){
+    .toggleBtn{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu{
+        position: relative;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        height: auto;
+        background-color: rgb(255, 217, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+       
+        
+    }
+    .menu.open{
+        display: flex;
+        animation: transformMenu 300ms ease-in-out forwards;
+        
+    }
+
+    @keyframes transformMenu {
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: initial;
+        }
+        
+    }
+    ul{
+        flex-direction: column;
+    }
+    .article{
+        width: auto;
+    
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    .contactDiv p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width : 520px){
+    #showReal img{
+        height: 90px;
+        width: 180px;
+    }
+    
+    .article{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    #contact{
+        left: 0%;
+        transform: translate(0);
+        padding-left: 10px;
+    
+    }
+    #realisations{
+        width: 100vw;
+        padding-left: 10px;
+    }
+    .contactDiv div{
+        display: block
+    }
+}
+    

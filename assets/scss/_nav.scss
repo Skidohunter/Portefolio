@@ -13,11 +13,15 @@
     width: 50px;
     transform: rotate(90deg);
 }
-
+nav{
+    background-color: gold;
+    height: 80px;
+    position: sticky;
+    top: 0;
+}
 ul{
     @include flex;
     gap:30px ;
-    background-color: gold;
     height: 80px;
 }
 
@@ -25,5 +29,49 @@ ul{
     height: 80px;
     width: 80px;
     position: fixed;
-    right:95%;
 }
+
+//MENU BURGER//
+
+  .toggleBtn{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left :50%;
+    transform: translateX(-50%);
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    top: 1%;
+    display: none;
+  }
+
+  .toggleBtn span{
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+
+  .toggleBtn span:before{
+    content: "";
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+
+  .toggleBtn span:after{
+    content: "";
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+

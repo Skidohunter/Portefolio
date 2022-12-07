@@ -1,0 +1,27 @@
+#contact{
+    padding: 200px 0 200px 0px;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    @include flex(center,flex-start,column);
+    gap: 100px;
+    width: 70vw;
+    
+}
+
+.contactDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+ 
+
+    div{
+        font-size: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,41 @@
+#realisations{
+    padding: 200px 0 200px 0px;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    @include flex(center,flex-start,column);
+    gap: 100px;
+    width: 70vw;
+    
+}
+
+#showReal{
+    @include flex;
+    flex-wrap: wrap;
+    
+    img{
+        height: 180px;
+        width: 360px;
+    }
+}
+
+.article{
+    @include flex(center,center,column);
+    width: 500px;
+    gap: 10px;
+    border: 2px solid #7d2323;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 16px 2px #7d2323;
+
+}
+
+.git{
+    height: 50px;
+    width: 50px;
+    background-image: url('/assets/images/Badge_2_ans_72px.png');
+    background-size: cover;
+    background-position: center;
+    
+}

@@ -2,6 +2,50 @@ let app = document.getElementById('txtAnim');
 let profil = document.getElementById('profil');
 let xp = document.getElementById('xp');
 let outils = document.getElementById('outils');
+let burger = document.querySelector(".toggleBtn");
+let menu = document.querySelector(".menu");
+let realisations = document.getElementById('realisations')
+let show = document.getElementById("showReal");
+let contact = document.getElementById("contact");
+
+
+let reals = [
+    {name:'Acceuil VidDev' , image:"assets/images/VidDevHome.png" , outils :'Technologies utilisées : REACT , SASS , CSS , API , GIT .' ,lien :'https://github.com/Skidohunter/divVideo'},
+    {name:'Login VidDev' , image: "assets/images/videDevLogin.png", outils :' Technologies utilisées : REACT , SASS , CSS , API , GIT .',lien :'https://github.com/Skidohunter/divVideo' },
+    {name:' Pokedex' , image: "assets/images/Pokedex react.png" , outils :' Technologies utilisées : REACT , SASS , CSS , API , GIT .',lien :'https://github.com/Skidohunter/pokemon-react' },
+    {name:' Neotech' , image: "assets/images/neotech.png" , outils :' Technologies utilisées :  SASS , CSS , GIT .',lien :'https://github.com/Skidohunter/Projet-neotech' }
+
+]
+
+function showReal(){
+
+reals.forEach((real) => {
+
+  let articleElement = document.createElement('article')
+  let titleElement = document.createElement('h3');
+  let imgElement = document.createElement('img');
+  let outilsElement = document.createElement('p');
+  let lienElement = document.createElement('a')
+  let outilsTexte = document.createTextNode(real.outils);
+  let titleTxt = document.createTextNode(real.name); 
+  imgElement.setAttribute('src',real.image);
+  lienElement.setAttribute('href',real.lien);
+  outilsElement.appendChild(outilsTexte);
+  titleElement.appendChild(titleTxt);
+  articleElement.appendChild(titleElement);
+  articleElement.appendChild(imgElement);
+  articleElement.appendChild(outilsTexte);
+  articleElement.appendChild(lienElement);
+  show.appendChild(articleElement);
+  articleElement.classList.add("article");
+  lienElement.classList.add('git')
+
+
+})
+
+}
+
+
 
 //Creation de la function ppour la caroussel automatique avec le plugin owl//
 
@@ -43,15 +87,39 @@ let typewriter = new Typewriter(app, {
 
     //Creation de mes ecoutes d'evenements pour lancer mes keyframes //
 
-    profil.addEventListener('mouseenter', anim);
-    xp.addEventListener('mouseenter',anim);
+    profil.addEventListener('mouseenter', animOnProfil);
+    xp.addEventListener('mouseenter', animOnXp);
+    outils.addEventListener('mouseenter', animOnOutils);
+    realisations.addEventListener('mouseenter', animOnRealisations);
+    contact.addEventListener("mouseenter",animOnContact)
 
-    function anim(){
+
+      function animOnProfil(){
         profil.classList.add('profilAnim');
-        xp.classList.add('profilAnim');  
-        outils.classList.add('profilAnim');            
+            
+      }
+      function animOnXp(){  
+        xp.classList.add('profilAnim');       
+      }
+      function animOnOutils(){
+        outils.classList.add('profilAnim');          
+      }
+      function animOnRealisations(){
+        realisations.classList.add('profilAnim')           
+      }
+      function animOnContact(){
+        contact.classList.add('profilAnim')           
+      }
+
+
+
+
+
+  //Creation de la fonction et de l'écouter d'évenement de mon burger//
+
+    burger.addEventListener('click',open)
+    function open (){
+      menu.classList.toggle('open')
     }
 
-
-
-    
+    showReal()
