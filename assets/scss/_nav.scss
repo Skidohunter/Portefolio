@@ -16,13 +16,16 @@
 nav{
     background-color: gold;
     height: 80px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100vw;
+    z-index: 5;
 }
 ul{
     @include flex;
     gap:30px ;
     height: 80px;
+
 }
 
 .logoDev{

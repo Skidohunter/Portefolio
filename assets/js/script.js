@@ -9,6 +9,7 @@ let show = document.getElementById("showReal");
 let contact = document.getElementById("contact");
 
 
+//Creation de mon tableau Json//
 let reals = [
     {name:'Acceuil VidDev' , image:"assets/images/VidDevHome.png" , outils :'Technologies utilisées : REACT , SASS , CSS , API , GIT .' ,lien :'https://github.com/Skidohunter/divVideo'},
     {name:'Login VidDev' , image: "assets/images/videDevLogin.png", outils :' Technologies utilisées : REACT , SASS , CSS , API , GIT .',lien :'https://github.com/Skidohunter/divVideo' },
@@ -17,6 +18,7 @@ let reals = [
 
 ]
 
+//Creation de ma boucle et ma fonction pour créer mes articles par lignes//
 function showReal(){
 
 reals.forEach((real) => {
@@ -115,11 +117,14 @@ let typewriter = new Typewriter(app, {
 
 
 
-  //Creation de la fonction et de l'écouter d'évenement de mon burger//
+  //Creation de la fonction et de l'écoute d'évenement de mon burger//
 
     burger.addEventListener('click',open)
     function open (){
       menu.classList.toggle('open')
     }
 
+    //Lance de ma fonction showReal au chargement de la page//
     showReal()
+
+    

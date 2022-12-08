@@ -12,6 +12,7 @@
     src: url('/assets/fonts/Poppins-SemiBold.ttf');
 }
 
+
 body{
     background-color: black;
     font-family: 'popins';
@@ -31,4 +32,13 @@ h3{
 
 html {
     scroll-behavior: smooth;
+}
+
+a{
+    cursor: pointer;
+}
+
+h2{
+    border-bottom: 2px solid #7d2323;
+    padding: 5px;
 }

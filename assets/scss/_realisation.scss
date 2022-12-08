@@ -22,10 +22,10 @@
 .article{
     @include flex(center,center,column);
     width: 500px;
-    gap: 10px;
+    gap: 20px;
     border: 2px solid #7d2323;
     margin: 25px;
-    padding: 25px;
+    padding: 20px;
     border-radius: 6px;
     box-shadow: 2px 2px 16px 2px #7d2323;
 
